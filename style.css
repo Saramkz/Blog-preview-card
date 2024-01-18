@@ -1,10 +1,20 @@
+:root
+{
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  --Yellow: hsl(47, 88%, 63%);
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  background-color: hsl(47, 88%, 63%);
+  background-color: var(--Yellow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +25,7 @@ body{
 
 .container{
   background-color: hsl(0, 0%, 100%);
-  width:350px ;
+  width:300px ;
   padding: 20px;
   border-radius: 13px;
  box-shadow: 15px 15px 0 black;
@@ -27,6 +37,9 @@ body{
 }
 
 .text{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 img{
@@ -35,31 +48,53 @@ img{
   border-radius: 15px;
   }
 
+  .published-container{
+    
+   
+  }
+
 .learning{
   font-weight: bold;
-  padding: 10px;
+  padding: 7px 14px;
   background-color: hsl(47, 88%, 63%);
-  border-radius: 13px;
+  border-radius: 5px;
   display: inline-block;
 
 }
 
-.published{
-}
-
 .HTML{
   color: hsl(47, 88%, 63%);
-font-weight: bold;
-font-family: sans-serif;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+
 }
 
 .paragraph{
   color: hsl(0, 0%, 50%);
 }
 
+.published{
+  margin-top: 10px;
+}
+
+
+
+.profile-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
 .Name{
 
   font-weight: bold;
   font-family: sans-serif;
+}
 
+.monkey{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;  
 }
