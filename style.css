@@ -11,6 +11,8 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
 }
 
 body{
@@ -24,17 +26,24 @@ body{
 }
 
 .container{
-  background-color: hsl(0, 0%, 100%);
-  width:300px ;
+  background-color: var(--White);
+  width:350px ;
   padding: 20px;
   border-radius: 13px;
- box-shadow: 15px 15px 0 black;
+ box-shadow: 10px 10px 0 black;
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: column;
  gap: 20px;
 }
+
+.container:hover{
+
+  box-shadow: 15px 15px 0 black;
+
+}
+
 
 .text{
   display: flex;
@@ -48,30 +57,37 @@ img{
   border-radius: 15px;
   }
 
-  .published-container{
-    
-   
-  }
+  
 
 .learning{
   font-weight: bold;
   padding: 7px 14px;
-  background-color: hsl(47, 88%, 63%);
+  background-color:var(--Yellow);
   border-radius: 5px;
   display: inline-block;
 
 }
 
 .HTML{
-  color: hsl(47, 88%, 63%);
+  color: var(--Black);
   font-weight: bold;
   font-family: sans-serif;
   text-decoration: none;
-
 }
 
+.HTML h2
+{
+  font-weight: 800;
+}
+
+.HTML:hover{
+  color: var(--Yellow); 
+  
+}
+
+
 .paragraph{
-  color: hsl(0, 0%, 50%);
+  color: var(--Grey);
 }
 
 .published{
@@ -84,6 +100,7 @@ img{
   display: flex;
   align-items: center; 
   gap: 10px;
+  margin-top: 20px;
 }
 
 .Name{
